@@ -1,5 +1,5 @@
 # RGBLEDThermometer
-A(n) C++/Arduino program that displays the current temperature through an RGB LED
+An Arduino program that displays the current temperature through an RGB LED
 I created this thermometer to be used in my college dorm room. As I had an air conditioner/heater that relied simply on a dial similar to that in cars (a red/blue wedge symbolizing more or less hot/cold) I wanted something more precise and reliable. I decided to make a thermometer that would visually show me the current temperature in the room. It uses a RGB LED to flash the current temperature read from a TMP36 sensor. The LED first flashes the Tens value of the temperature (ie 8 flashes for the 8 in the temperature 86) followed by flashing the Ones values (ie 6 flashes for the 6 in the temperature 86). The temperature is then read two minutes later. The amount of time between the flashes can be changed in the code to accommodate for individual desire. I used two minutes during initial testing but during actual use I found anywhere from 30 minutes or 1 hour was more useful. Also hitting the reset button on the Arduino would allow you to check the temperature at any time.
 This project does not require an insane amount of parts to be constructed.
 
